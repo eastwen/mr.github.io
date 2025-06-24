@@ -1,0 +1,76 @@
+{
+  "mcpServers": {
+    "Figma AI Bridge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-developer-mcp",
+        "--stdio"
+      ],
+      "env": {
+        "FIGMA_API_KEY": "YOUR_FIGMA_API_KEY_HERE"
+      }
+    },
+    "GitHub": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN_HERE"
+      }
+    },
+    "Git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "YOUR_REPOSITORY_PATH_HERE"
+      ],
+      "env": {}
+    },
+    "Docker": {
+      "command": "uvx",
+      "args": [
+        "docker-mcp"
+      ],
+      "env": {}
+    },
+    "Puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {}
+    },
+    "mult-fetch-mcp-server": {
+      "command": "npx",
+      "args": [
+        "@lmcc-dev/mult-fetch-mcp-server"
+      ],
+      "env": {
+        "MCP_LANG": "en"
+      }
+    },
+    "hyperbrowser": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "hyperbrowser-mcp"
+      ],
+      "env": {
+        "HYPERBROWSER_API_KEY": "YOUR_HYPERBROWSER_API_KEY_HERE"
+      }
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ],
+      "env": {}
+    }
+  }
+}
